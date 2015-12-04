@@ -106,7 +106,7 @@ function callback(results, status) {
 }
 
 function createMarker(place) {
-  var randNum = Math.floor(Math.random() * pokemon.length);
+  var randNum = Math.floor(Math.random() * 155);
   $.ajax("http://pokeapi.co/api/v1/pokemon/" + randNum) // request info for one pokemon
   .done(function(pokemon){ // data received for pokemon
     $.get("http://pokeapi.co/" + pokemon.sprites[0].resource_uri) // request image info
