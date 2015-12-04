@@ -1,0 +1,20 @@
+{
+  "name": "googleapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EKracht/pokegooglemap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EKracht/pokegooglemap/issues"
+  },
+  "homepage": "https://github.com/EKracht/pokegooglemap#readme"
+}
