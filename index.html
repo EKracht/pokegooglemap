@@ -4,38 +4,38 @@
     <title>Place searches</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
   </head>
   <body>
-    <div id="right-panel"></div>
+    <h1>POKEMON</h1>
+    <h5>(I'm actually talking about places you can search nearby.)</h5>
+
+    <h3>What pokemon do you want to find?</h3>
+    
+    <div class="container">
+      <input id="inputPlace" type="text" placeholder="Ex: cafe">
+      <button class="btn btn-danger" id="find">Find Pokemon By Type</button>
+    </div>
+
+    <br>
+
+    <h4 for="">How far will you go to catch that pokemon (in miles)?</h4>
+
+    <div class="container">
+      <input id="inputRadius" type="number" placeholder="5" value="5">
+      <button class="btn btn-warning" id="radius">Filter by Radius</button>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
     <div id="map"></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLAkjlSE96llBoA-zEpO1hnHTLmr6Jb2Y&signed_in=true&libraries=places&callback=initMap" async defer></script>
   </body>
 </html>
- <!--
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Coffee!</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="mapCont" class="container">
-      <div id="map"></div>
-    </div>
-
-    <div id="placesCont" class="container">
-      <div id="places"></div>
-    </div>
-
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCLAkjlSE96llBoA-zEpO1hnHTLmr6Jb2Y&callback=initialize"
-      async defer>
-    </script>
-    <script src="main.js"></script>
-  </body>
-</html>
--->
